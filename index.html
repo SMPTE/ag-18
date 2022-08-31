@@ -357,7 +357,7 @@
         To help distinguish between Releases, the Project should be
         given a distinctive name.
       </p>
-      <p class="example">
+      <p>
         EXAMPLE: Project names of past Releases have included
         condiment names such as "catsup" and "brown sauce".
       </p>
@@ -388,7 +388,7 @@
       <p>
         The amendment of a Release should be reserved for correcting errors before the next Release.
       </p>
-      <p class="example">
+      <p>
         EXAMPLE: Periodic Releases lessens the need for amendments.
       </p>
     </section>
@@ -448,28 +448,552 @@
           The Submission shall be offered for review to the Metadata Register Sub Group.
         </p>
         <p>
-          The Submitter shall be responsible for addressing any deviation from the Acceptance Criteria noted by the Metadata Register Sub Group, and submitting a revised Submission.
+          The Submitter shall be responsible for addressing any
+          deviation from the Acceptance Criteria noted by the Metadata
+          Register Sub Group, and submitting a revised Submission.
         </p>
         <p class="note">
-          An "initial_draft" Submission is susceptible to significant substantive changes.
+          An "initial_draft" Submission is susceptible to significant
+          substantive changes.
         </p>
       </section>
 
+      <section id="sec-initial-to-draft">
+        <h4>Transition to Draft state</h4>
+        <p>
+          The Submission shall transition to the "draft" state if:
+        </p>
+        <ul>
+          <li>
+            every UL defined by the Submission has been reserved
+            such that it is not available to any other Submission;
+            and
+          </li>
+          <li>
+            the Metadata Register Sub Group has not determined, by
+            consensus, that the Submission fails to meet the
+            Acceptance Criteria.
+          </li>
+        </ul>
+      </section>
 
-
-      
+      <section id="sec-initial-to-withdrawn">
+        <h4>Transition to Withdrawn state</h4>
+        <p>
+          The Submission shall transition to "withdrawn" if:
+        </p>
+        <ul>
+          <li>
+            requested by the Submitter; or
+          </li>
+          <li>
+            the Submission has been abandoned, as determined by
+            consensus of the Technology Committee of the Metadata
+            Register Sub Group.
+          </li>
+        </ul>
+      </section>
     </section>
 
+    <section id="sec-draft-state">
+      <h3>Draft State</h3>
 
-    
+      <section id="sec-draft-actions">
+        <h4>Actions</h4>
+        <p>
+          The Submission shall be offered to the parent Technology
+          Committee of the Metadata Register Sub Group for review.
+        </p>
+        <p class="note">
+          A "draft" Submission remains susceptible to modifications
+          following TC review.
+        </p>
+        <p class="note">
+          The Technology Committee Chair determines the duration of
+          the review, as needed to achieve the transition criteria of
+          Section <a href="#sec-draft-to-mature"></a> This duration
+          can be arbitrarily short if, for instance, the Submission
+          was previously reviewed and changes are trivial.
+        </p>
+      </section>
+
+      <section id="sec-draft-to-mature">
+        <h4>Transition to mature State</h4>
+        <p>
+          The Submission shall transition to the "mature" state unless
+          the parent Technology Committee of the Metadata Register Sub
+          Group has determined, by consensus, that the Submission
+          fails to meet the Acceptance Criteria.
+        </p>
+        <p class="note">
+          Members that wish to provide comments beyond those related
+          to the Acceptance Criteria are encouraged to join the group
+          responsible for the Submission .
+        </p>
+      </section>
+
+      <section id="sec-draft-initial">
+        <h4>Transition to initial_draft State</h4>
+        <p>
+          The Submission shall transition to "initial_draft" if any
+          substantive modification is made to the Submission.
+        </p>
+      </section>
+
+      <section id="sec-draft-withdrawn">
+        <h4>Transition to Withdrawn State</h4>
+        <p>
+          The Submission shall transition to "withdrawn" if:
+        </p>
+        <ul>
+          <li>
+            requested by the Submitter; or
+          </li>
+          <li>
+            the Submission has been abandoned, as determined by
+            consensus of the Technology Committee of the Metadata
+            Register Sub Group.
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-mature-state">
+      <h3>Mature State</h3>
+
+      <section id="sec-mature-to-accepted">
+        <h4>Transition to Accepted State</h4>
+        <p>
+          The Submission shall transition to the "accepted" state once
+          the Defining Document of all Entries whose Defining Document
+          is an Engineering Document or a Registered Disclosure
+          Document, if any, has passed ST Audit and matches the
+          contents of the Entry exactly.
+        </p>
+        <p class="note">
+          The "mature" state is provided if the Defining Document
+          might undergo further modifications, but requires a stable
+          Submission to proceed.
+        </p>
+        <p class="note">
+          A "mature" Submission is modified if the Defining Document
+          is modified.
+        </p>
+        <p>
+          A Submission that does not include Entries
+          from a Defining Document that is an Engineering Document or
+          a Registered Disclosure Document shall transition to the
+          "accepted" state immediately.
+        </p>
+      </section>
+
+      <section id="sec-mature-initial">
+        <h4>Transition to Initial_Draft State</h4>
+        <p>
+          The Submission shall transition to "initial_draft" if any
+          substantive modification is made to the Submission.
+        </p>
+      </section>
+
+      <section>
+        <h4>Transition to Withdrawn State</h4>
+        <p>
+          The Submission shall transition to "withdrawn" if:
+        </p>
+        <ul>
+          <li>
+            requested by the Submitter; or
+          </li>
+          <li>
+            the Submission has been abandoned, as determined by
+            consensus of the parent Technology Committee of the
+            Metadata Register Sub Group.
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-accepted-state">
+      <h3>Accepted State</h3>
+      <p>
+        Modifications shall not be made to the Submission.
+      </p>
+    </section>
+
+    <section id="sec-withdrawn-state">
+      <h3>Withdrawn State</h3>
+
+      <section id="sec-withdrawn-actions">
+        <h4>Actions</h4>
+        <p>
+          All ULs defined by the Submission shall become available to
+          other Submissions.
+        </p>
+      </section>
+
+      <section id="sec-withdrawn-to-initial">
+        <h4>Transition to Initial_Draft State</h4>
+        <p>
+          The Submission may transition to "initial_draft" if
+          requested by the Submitter.
+        </p>
+      </section>
+    </section>
   </section>
 
   <section class="annex" id="sec-acceptance-criteria">
     <h2>Acceptance Criteria</h2>
+
+    <section id="sec-acceptance-general">
+      <h3>General</h3>
+      <p>
+        Submissions defining Public-Use Entries shall meet the
+        criteria of Sections <a href="#sec-acceptance-common"></a> and
+        <a href="#sec-acceptance-public"></a>.
+      </p>
+      <p>
+        Submissions defining top-level Class 13 or Class 14 Nodes
+        shall meet the criteria of Sections
+        <a href="#sec-acceptance-common"></a> and
+        <a href="#sec-acceptance-top"></a>.
+      </p>
+      <p>
+        Submissions defining SMPTE-Controlled Entries other than
+        top-level Class 13 or Class 14 Nodes shall meet the criteria
+        of Sections <a href="#sec-acceptance-common"></a> and
+        <a href="#sec-acceptance-smpte"></a>.
+      </p>
+    </section>
+
+    <section id="sec-acceptance-common">
+      <h3>Common Criteria</h3>
+
+      <section id="sec-contact-info">
+        <h4>Contact Information</h4>
+        <p>
+          The Submission shall include contact information for the Submitter.
+        </p>
+      </section>
+
+      <section id="sec-filename">
+        <h4>Submission File Name</h4>
+        <p>
+          A submission should consist of a single zip file.
+        </p>
+        <p>
+          The filename of the zip file should conform to the following
+          FILENAME syntax
+          <pre>
+  FILENAME := TC "-REG-" TYPE "-" DESCRIPTION "-" DATE TC := 1*(ALPHA / DIGIT)
+  TYPE := "DD" / "CORR" / "CLASS13" / "CLASS14" / "MISC" DATE := YYYY "-" MM "-" DD
+  YYYY := 4DIGIT
+  MM := 2DIGIT
+  DD := 2DIGIT</pre>
+        </p>
+        <p>
+          The TC field is the short name of the parent TC of the
+          Metadata Register Sub Group, e.g. 30MR.
+        </p>
+        <p>
+          The TYPE field shall be selected based on the nature of the
+          submission as specified in
+          <a href="#table-submission-type"></a>
+        </p>
+        <table id="table-submission-type" width="40%">
+          <caption>Submission File Name Type Field.</caption>
+          <tr><th>TYPE</th><th>Type of submission</th>
+          <tr><td>DD</td><td>Addition of an Entry</td></tr>
+          <tr><td>CORR</td><td>Correction to an existing Entry</td></tr>
+          <tr><td>CLASS13</td><td>Class 13 Node Allocation</td></tr>
+          <tr><td>CLASS14</td><td>Class 14 Node Allocation</td></tr>
+          <tr><td>MISC</td><td>Other</td></tr>
+        </table>
+        <p class="note">
+          The MISC type is intended to be used if no other types fit,
+          e.g. a Submission that both adds and corrects Entries.
+        </p>
+        <p>
+          The DESCRIPTION field shall be selected based on the value
+          of the TYPE field.
+        </p>
+        <table id="table-submission-description">
+          <caption>Submission File Name Description Field.</caption>
+          <tr><th>TYPE</th><th>DESCRIPTION</th></tr>
+          <tr>
+            <td>DD</td>
+            <td>
+              Concise description of item(s) being added
+              (e.g. ST2067-1)
+            </td>
+          </tr>
+          <tr>
+            <td>CORR</td>
+            <td>
+              Concise description of item(s) being corrected
+              (e.g. Groups- IsConcrete)
+            </td>
+          </tr>
+          <tr>
+            <td>CLASS13</td>
+            <td>
+              Description of Class13 node owner and purpose of change
+              (e.g. AVID-new-entries)
+            </td>
+          </tr>
+          <tr>
+            <td>CLASS14</td>
+            <td>
+              Description of Class14 node owner and purpose of change
+              (e.g. AVID-new-entries)
+            </td>
+          </tr>
+          <tr><td>MISC</td><td>Other</td></tr>
+        </table>
+        <p>
+          The DATE field shall be the date when the Submission was initially submitted.
+        </p>
+        <p>
+          EXAMPLE 1: 30MR-REG-DD-ST2067-01-2017-12-10.zip
+        </p>
+        <p>
+          EXAMPLE 2: 30MR-REG-CLASS13-LOC-new-entries-2017-10-10.zip
+        </p>
+      </section>
+
+      <section id="sec-contents">
+        <h4>Contents</h4>
+        <p>
+          A Submission shall consist of one or more documents, each
+          containing Entries that belong to one Metadata Register.
+        </p>
+        <p>
+          Each XML document shall conform to one of the XML Schema
+          definitions, which shall be determined by TC 30MR from
+          time-to-time and published on the SMPTE Registration
+          Authority website.
+        </p>
+        <p>
+          The filename of each document should conform to the following DOCNAME syntax:
+        </p>
+        <pre>
+  DOCNAME := TC "-REG-" TYPE "-" DESCRIPTION "-" REGISTER
+  REGISTER := "groups" / "elements" / "labels" / "types"</pre>
+        <p>
+          where the TC, TYPE and DESCRIPTION fields shall match that
+          of the Submission file name
+          (Section <a href="#sec-filename"></a>).
+        </p>
+        <p>
+          EXAMPLE: 30MR-REG-DD-ST2067-01-groups.xml,
+          30MR-REG-CLASS14-XYZCorp-labels.xml
+        </p>
+        <p>
+          The filename of each document shall remain constant
+          throughout the Submission process.
+        </p>
+      </section>
+
+      <section id="sec-unique-ul">
+        <h4>Unique UL</h4>
+        <p>
+          No UL added by the Submission shall be equal to any
+          published or reserved UL.
+        </p>
+        <p>
+          This equality shall ignore the value of the Version Byte
+          (Byte 8).
+        </p>
+      </section>
+
+      <section id="sec-acceptance-conformance">
+        <h4>Conformance with the Metadata Register Structure Document</h4>
+        <p>
+          Each Entry defined by the Submission shall conform to the
+          corresponding Metadata Register Structure Document.
+        </p>
+      </section>
+
+      <section id="sec-consistency">
+        <h4>Consistency</h4>
+        <p>
+          Each Entry defined by the Submission should be consistent
+          other Entries within the same Node.
+        </p>
+      </section>
+
+      <section id="sec-single-control">
+        <h4>Single Controlling Organization</h4>
+        <p>
+          All Entries defined by the Submission shall belong to the
+          same Controlling Organization.
+        </p>
+      </section>
+
+      <section id="sec-deletion">
+        <h4>Deletion</h4>
+        <p>
+          A Submission shall not result in an Entry being deleted.
+        </p>
+        <p class="note">
+          An Entry that is no longer appropriate is deprecated,
+          i.e. its Deprecated field is set to "true".
+        </p>
+      </section>
+    </section>
+
+    <section id="sec-acceptance-top">
+      <h3>Top-Level Class 13 or Class 14 Nodes</h3>
+
+      <section id="sec-top-submitter">
+        <h4>Submitter</h4>
+        <p>
+          The Submitter shall be the Director of Engineering.
+        </p>
+      </section>
+
+      <section id="sec-top-version-byte">
+        <h4>Version Byte</h4>
+        <p>
+          The Version Byte of each new UL shall be Current Version
+          Byte specified in Section <a href="#sec-version-byte"></a>.
+        </p>
+      </section>
+    </section>
+    
+    <section id="sec-acceptance-smpte">
+      <h3>SMPTE-Controlled Entries</h3>
+
+      <section id="sec-smpte-submitter">
+        <h4>Submitter</h4>
+        <p>
+          The Submitter shall be a member of the Standards Community.
+        </p>
+      </section>
+
+      <section id="sec-smpte-version-byte">
+        <h4>Version Byte</h4>
+        <p>
+          The Version Byte of each new UL shall be Current Version
+          Byte specified in Section <a href="#sec-version-byte"></a>.
+        </p>
+      </section>
+
+      <section id="sec-smpte-define">
+        <h4>Defining Document</h4>
+        <p>
+          A Defining Document shall be associated with each Entry.
+        </p>
+        <p>
+          The Defining Document shall be either:
+        </p>
+        <ul>
+          <li>a SMPTE Engineering Document;</li>
+          <li>a specification listed in AG 03; or</li>
+          <li>a SMPTE Registered Disclosure Document (RDD).</li>
+        </ul>
+        <p>
+          The Defining Document shall define the semantics of each
+          Entry.
+        </p>
+        <p>
+          If the Defining Document is a SMPTE Engineering Document or
+          a SMPTE Registered Disclosure Document, the Defining
+          Document shall in addition define the associated properties
+          of each Entry.
+        </p>
+        <p>
+          The Submission shall include a copy of the Defining
+          Document, or the portion thereof sufficient to unambiguously
+          define the semantics of the Entry.
+        </p>
+      </section>
+    </section>
+
+    <section id="sec-acceptance-public">
+      <h3>Criteria for Public-Use Entries</h3>
+
+      <section id="sec-public-submitter">
+        <h4>Submitter</h4>
+        <p>
+          The Submitter shall be the Controlling Organization of the
+          Entries modified by the Submission.
+        </p>
+      </section>
+      
+      <section id="sec-public-define">
+        <h4>Defining Document</h4>
+        <p>
+          A Defining Document should be associated with each Entry.
+        </p>
+      </section>
+      
+      <section id="sec-public-version-byte">
+        <h4>Version Byte</h4>
+        <p>
+          The Version Byte of each new UL added by the Submission is
+          at the discretion of the Submitter.
+        </p>
+      </section>
+    </section>
+    
   </section>
 
   <section class="annex" id="sec-examples">
     <h2>Examples (informative)</h2>
+
+    <section id="sec-example-st">
+      <h3>SMPTE Engineering Document as Defining Document</h3>
+      <p>
+        <a href="#sec-figure-st-timeline"></a> illustrates the Release
+        process for an Entry whose Defining Document is a SMPTE
+        Engineering Document.
+      </p>
+      <figure id="sec-figure-st-timeline">
+        <img class="figure" src="st-timeline.png">
+        <figcaption>
+          Sample Timeline: Entry whose Defining Document is a SMPTE
+          Engineering Document.
+        </figcaption>
+      </figure>
+    </section>
+    
+    <section id="sec-example-rdd">
+      <h3>SMPTE RDD as Defining Document</h3>
+      <p>
+        <a href="#sec-figure-rdd-timeline"></a> illustrates the Release
+        process for an Entry whose Defining Document is a SMPTE
+        RDD.
+      </p>
+      <figure id="sec-figure-rdd-timeline">
+        <img class="figure" src="rdd-timeline.png">
+        <figcaption>
+          Sample Timeline: Entry whose Defining Document is a SMPTE
+          RDD.
+        </figcaption>
+      </figure>
+    </section>
+    
+    <section id="sec-example-st">
+      <h3>
+        AG 03 Reference as Defining Document or Class 13/14 Top-Level
+        Node Allocation
+      </h3>
+      <p>
+        <a href="#sec-figure-top-level-timeline"></a> illustrates the
+        Release process for an Entry whose Defining Document
+        references a normative reference permitted in AG 03, or in the
+        case of a Class 13/14 Top-Level Node Allocation (see
+        <a href="#sec-allocation-transfer"></a>).
+      </p>
+      <figure id="sec-figure-top-level-timeline">
+        <img class="figure" src="top-level-timeline.png">
+        <figcaption>
+          Sample Timeline: Entry whose Defining Document is a AG 03 or
+          is a Class 13/14 Top-Level Node.
+        </figcaption>
+      </figure>
+    </section>
+    
   </section>
 
   <section class="annex" id="sec-allocation-transfer">
@@ -477,14 +1001,90 @@
       Allocation and Transfer of Control of Public-Use Entries and
       Private-Use Entries (normative)
     </h2>
+
+    <section id="sec-allocation">
+      <h3>Allocation</h3>
+      <p>
+        Any entity may request a top-level Class 13 or Class 14 Node
+        from the Director of Engineering.
+      </p>
+      <p>
+        The request shall be in a form determined by the Director of
+        Engineering and published on the SMPTE Registration Authority
+        website, and may require a processing fee. The processing fee
+        shall be determined from time-to-time by the Director of
+        Engineering in consultation with the Standards Vice President
+        and the Financial Vice President.
+      </p>
+      <p>
+        Upon receipt of the request and processing fee, the Director
+        of Engineering shall initiate a Submission defining the Node
+        being requested.
+      </p>
+      <p>
+        When the Submission achieves "draft" status, the entity
+        becomes the Controlling Organization of all Entries within the
+        Node, excluding the Node Entry itself, across all Metadata
+        Register Structure Documents.
+      </p>
+      <p>
+        If the Submission is Withdrawn, the processing fee shall be
+        returned to the requesting party.
+      </p>
+    </section>
+
+    <section id="sec-transfer">
+      <h3>Transfer of Control</h3>
+      <p>
+        The Controlling Organization of a Private-Use or a Public-Use
+        Entry may, at its sole discretion, transfer control of the
+        Entry to SMPTE at perpetuity.
+      </p>
+      <p>
+        The document stipulating the transfer of control shall be in a
+        form determined by the Director of Engineering.
+      </p>
+    </section>
   </section>
 
   <section class="annex" id="sec-private-use-control">
     <h2>Private-Use Entries under SMPTE Control (normative)</h2>
+    <p>
+      <a href="#table-private-use"></a> lists Private-Use Entries
+      whose control has been delegated to SMPTE.
+    </p>
+    <table id="table-private-use" width="75%">
+      <caption>Private-Use Entries Controlled by SMPTE.</caption>
+      <tr><th>Node UL</th><th>Node Name</th><th>Notes</th></tr>
+      <tr><td colspan="3">None</td></tr>
+    </table>
+    <p class="note">
+      A Private-Use Entry Controlled by SMPTE undergoes the same
+      Submission process as any other SMPTE- Controlled Entry, and
+      cannot be deleted and reused (see Section
+      <a href="#sec-deletion"></a>).
+    </p>
   </section>
 
+  <section class="annex" id="sec-public-use-control">
+    <h2>Public-Use Entries under SMPTE Control (normative)</h2>
+    <p>
+      <a href="#table-public-use"></a> lists Public-Use Entries
+      whose control has been delegated to SMPTE.
+    </p>
+    <table id="table-public-use" width="75%">
+      <caption>Public-Use Entries Controlled by SMPTE.</caption>
+      <tr><th>Bytes 9..11</th><th>Node Name</th><th>Notes</th></tr>
+      <tr><td>0D.01.01</td><td>Structural Metadata</td><td></td></tr>
+      <tr><td>0D.01.02</td><td>Partition Packs | Operational Patterns</td><td></td></tr>
+      <tr><td>0D.01.03</td><td>Essence Containers</td><td rowspan="2">Delegated by AMWA Association.</td></tr>
+      <tr><td>0D.01.04</td><td>Descriptive Metadata Schemes</td></tr>
+      <tr><td>0D.01.05</td><td>Generic Stream Partition</td><td></td></tr>
+      <tr><td>0D.01.06</td><td>Application Metadata Plugin</td><td></td></tr>
+    </table>
+  </section>
 
-
+  <section id="sec-bibliography"></section>
 </body>
 
 </html>
