@@ -16,9 +16,44 @@
 
   <body>
 
+    <section id="sec-toc" class="unnumbered"></section>
+
     <section id="sec-foreword" class="unnumbered"></section>
 
-    <section id="sec-toc" class="unnumbered"></section>
+    <section id="sec-introduction" class="unnumbered">
+      <h2>Introduction</h2>
+      <p>
+        This section is entirely informative and does not form an
+        integral part of this Administrative Guideline.
+      </p>
+      <p>
+        This Administrative
+        Guideline covers all classes of Entries defined across all Metadata
+        Register Structure Documents specified by SMPTE, and specifies:
+      </p>
+      <ul>
+        <li>
+          in Section <a href="#sec-management-publication"></a>, the
+          process for allocating top-level Class 13 and 14 nodes to
+          external entities;
+        </li>
+        <li>
+          in Section <a href="#sec-development-publication"></a>, the
+          process of developing and publishing Metadata Registers,
+          which follows the development process specified in the
+          Standards Operations Manual;
+        </li>
+        <li>
+          in Section <a href="#sec-submission-process"></a>, a process
+          for preparing stable entries for inclusion in a Metadata
+          Register; and
+        </li>
+        <li>
+          in <a href="#sec-acceptance-criteria"></a>, the criteria for
+          accepting entries in Metadata Registers.
+        </li>
+      </ul>
+    </section>
 
     <section id="sec-scope">
       <h2>Scope</h2>
@@ -34,43 +69,35 @@
       <ul>
         <li>
           <cite id="bib-smpte-st-2003">SMPTE ST 2003</cite>,
-          Types Dictionary Structure,
-          <a>https://ieeexplore.ieee.org/document/7291260</a>
+          Types Dictionary Structure
         </li>
         <li>
           <cite id="bib-smpte-st-335">SMPTE ST 335</cite>,
-          Metadata Element Dictionary Structure,
-          <a>https://ieeexplore.ieee.org/document/7291959</a>
+          Metadata Element Dictionary Structure
         </li>
         <li>
           <cite id="bib-smpte-st-395">SMPTE ST 395</cite>,
-          Metadata Groups Registry Structure,
-          <a>https://ieeexplore.ieee.org/document/7291947</a>
+          Metadata Groups Registry Structure
         </li>
         <li>
           <cite id="bib-smpte-st-400">SMPTE ST 400</cite>,
-          Television – SMPTE Labels Structure,
-          <a>https://ieeexplore.ieee.org/document/7291812</a>
+          Television – SMPTE Labels Structure
         </li>
         <li>
           <cite id="bib-smpte-st-298">SMPTE ST 298</cite>,
-          Television – Universal Labels for Unique Identification of Digital Data,
-          <a>https://ieeexplore.ieee.org/document/7290717</a>
+          Television – Universal Labels for Unique Identification of Digital Data
         </li>
         <li>
           <cite id="bib-smpte-st-336">SMPTE ST 336</cite>,
-          Data Encoding Protocol Using Key-Length-Value,
-          <a>https://ieeexplore.ieee.org/document/8019807</a>
+          Data Encoding Protocol Using Key-Length-Value
         </li>
         <li>
           <cite id="bib-smpte-st-om">SMPTE Standards Operations Manual</cite>,
-          SMPTE Standards Operations Manual,
-          <a>https://www.smpte.org/2020-standard-policies-and-governance</a>
+          SMPTE Standards Operations Manual
         </li>
         <li>
           <cite id="bib-smpte-ag-03">SMPTE AG 03</cite>,
-          Normative References,
-          <a>https://www.smpte.org/2020-standard-policies-and-governance</a>
+          Normative References
         </li>
       </ul>
     </section>
@@ -105,7 +132,7 @@
       </section>
 
       <section id="sec-dfn-defining-document">
-        <h3>sec-defining-document</h3>
+        <h3>Defining Document</h3>
         <p>
           Document referenced in the Defining Document property of an
           Entry.
@@ -442,7 +469,7 @@
       </section>
       
       <section id="sec-initial-draft-state">
-        <h3>Initial Draft State</h3>
+        <h3>Initial_draft State</h3>
 
         <section id="sec-initial-actions">
           <h4>Actions</h4>
@@ -645,7 +672,7 @@
     </section>
 
     <section class="annex" id="sec-acceptance-criteria">
-      <h2>Acceptance Criteria</h2>
+      <h2>Acceptance Criteria (normative)</h2>
 
       <section id="sec-acceptance-general">
         <h3>General</h3>
@@ -688,8 +715,10 @@
             The filename of the zip file should conform to the following
             FILENAME syntax
             <pre>
-FILENAME := TC "-REG-" TYPE "-" DESCRIPTION "-" DATE TC := 1*(ALPHA / DIGIT)
-TYPE := "DD" / "CORR" / "CLASS13" / "CLASS14" / "MISC" DATE := YYYY "-" MM "-" DD
+FILENAME := TC "-REG-" TYPE "-" DESCRIPTION "-" DATE
+TC := 1*(ALPHA / DIGIT)
+TYPE := "DD" / "CORR" / "CLASS13" / "CLASS14" / "MISC"
+DATE := YYYY "-" MM "-" DD
 YYYY := 4DIGIT
 MM := 2DIGIT
 DD := 2DIGIT</pre>
@@ -724,7 +753,7 @@ DD := 2DIGIT</pre>
             <caption>Submission File Name Description Field.</caption>
             <tr><th>TYPE</th>    <th>DESCRIPTION</th></tr>
             <tr><td>DD</td>      <td>Concise description of item(s) being added (e.g. ST2067-1)</td></tr>
-            <tr><td>CORR</td>    <td>Concise description of item(s) being corrected (e.g. Groups- IsConcrete)</td></tr>
+            <tr><td>CORR</td>    <td>Concise description of item(s) being corrected (e.g. Groups-IsConcrete)</td></tr>
             <tr><td>CLASS13</td> <td>Description of Class13 node owner and purpose of change (e.g. AVID-new-entries)</td></tr>
             <tr><td>CLASS14</td> <td>Description of Class14 node owner and purpose of change (e.g. AVID-new-entries)</td></tr>
             <tr><td>MISC</td>    <td>Other</td></tr>
@@ -1045,7 +1074,7 @@ REGISTER := "groups" / "elements" / "labels" / "types"</pre>
       </table>
       <p class="note">
         A Private-Use Entry Controlled by SMPTE undergoes the same
-        Submission process as any other SMPTE- Controlled Entry, and
+        Submission process as any other SMPTE-Controlled Entry, and
         cannot be deleted and reused (see Section
         <a href="#sec-deletion"></a>).
       </p>
