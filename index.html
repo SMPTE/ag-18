@@ -143,10 +143,22 @@
 
         <table id="table-superseded">
           <caption>Superseded Procedures and Criteria.</caption>
-          <tr><td><a href="#bib-smpte-st-335"></a></td>  <td>Section 5 and Annex B</td></tr>
-          <tr><td><a href="#bib-smpte-st-395"></a></td>  <td>Section 5 and Annex B</td></tr>
-          <tr><td><a href="#bib-smpte-st-2003"></a></td> <td>Section 5 and Annex B</td></tr>
-          <tr><td><a href="#bib-smpte-st-400"></a></td>  <td>Section 5 and Annex B</td></tr>
+          <tr>
+            <td><a href="#bib-smpte-st-335"></a></td>
+            <td>Section 5 and Annex B</td>
+          </tr>
+          <tr>
+            <td><a href="#bib-smpte-st-395"></a></td>
+            <td>Section 5 and Annex B</td>
+          </tr>
+          <tr>
+            <td><a href="#bib-smpte-st-2003"></a></td>
+            <td>Section 5 and Annex B</td>
+          </tr>
+          <tr>
+            <td><a href="#bib-smpte-st-400"></a></td>
+            <td>Section 5 and Annex B</td>
+          </tr>
         </table>
 
       </section>
@@ -564,12 +576,34 @@ DD := 2DIGIT
 
           <table id="table-submission-type">
             <caption><a>Submission</a> File Name Type Field.</caption>
-            <tr><th>TYPE</th>    <th>Type of submission</th></tr>
-            <tr><td>DD</td>      <td>Addition of an <a>Entry</a></td></tr>
-            <tr><td>CORR</td>    <td>Correction to an existing <a>Entry</a></td></tr>
-            <tr><td>CLASS13</td> <td>Class 13 <a>Node</a> Allocation</td></tr>
-            <tr><td>CLASS14</td> <td>Class 14 <a>Node</a> Allocation</td></tr>
-            <tr><td>MISC</td>    <td>Other</td></tr>
+            <thead>
+              <tr>
+                <th>TYPE</th>
+                <th>Type of submission</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DD</td>
+                <td>Addition of an <a>Entry</a></td>
+              </tr>
+              <tr>
+                <td>CORR</td>
+                <td>Correction to an existing <a>Entry</a></td>
+              </tr>
+              <tr>
+                <td>CLASS13</td>
+                <td>Class 13 <a>Node</a> Allocation</td>
+              </tr>
+              <tr>
+                <td>CLASS14</td>
+                <td>Class 14 <a>Node</a> Allocation</td>
+              </tr>
+              <tr>
+                <td>MISC</td>
+                <td>Other</td>
+              </tr>
+            </tbody>
           </table>
 
           <p class="note">
@@ -582,12 +616,34 @@ DD := 2DIGIT
 
           <table id="table-submission-description">
             <caption><a>Submission</a> File Name Description Field.</caption>
-            <tr><th>TYPE</th>    <th>DESCRIPTION</th></tr>
-            <tr><td>DD</td>      <td>Concise description of item(s) being added (e.g. ST2067-1)</td></tr>
-            <tr><td>CORR</td>    <td>Concise description of item(s) being corrected (e.g. Groups-IsConcrete)</td></tr>
-            <tr><td>CLASS13</td> <td>Description of Class13 <a>Node</a> owner and purpose of change (e.g. AVID-new-entries)</td></tr>
-            <tr><td>CLASS14</td> <td>Description of Class14 <a>Node</a> owner and purpose of change (e.g. AVID-new-entries)</td></tr>
-            <tr><td>MISC</td>    <td>Other</td></tr>
+            <thead>
+              <tr>
+                <th>TYPE</th>
+                <th>DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DD</td>
+                <td>Concise description of item(s) being added (e.g. ST2067-1)</td>
+              </tr>
+              <tr>
+                <td>CORR</td>
+                <td>Concise description of item(s) being corrected (e.g. Groups-IsConcrete)</td>
+              </tr>
+              <tr>
+                <td>CLASS13</td>
+                <td>Description of Class13 <a>Node</a> owner and purpose of change (e.g. AVID-new-entries)</td>
+              </tr>
+              <tr>
+                <td>CLASS14</td>
+                <td>Description of Class14 <a>Node</a> owner and purpose of change (e.g. AVID-new-entries)</td>
+              </tr>
+              <tr>
+                <td>MISC</td>
+                <td>Other</td>
+              </tr>
+            </tbody>
           </table>
 
           <p>
@@ -849,8 +905,18 @@ REGISTER := "groups" / "elements" / "labels" / "types"
 
       <table id="table-private-use">
         <caption>Private-Use Entries Controlled by SMPTE.</caption>
-        <tr><th><a>Node</a> <a>UL</a></th> <th><a>Node</a> Name</th> <th>Notes</th></tr>
-        <tr><td colspan="3">None</td></tr>
+        <thead>
+          <tr>
+            <th><a>Node</a> <a>UL</a></th>
+            <th><a>Node</a> Name</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">None</td>
+          </tr>
+        </tbody>
       </table>
 
       <p class="note">
@@ -866,13 +932,44 @@ REGISTER := "groups" / "elements" / "labels" / "types"
       </p>
       <table id="table-public-use">
         <caption>Public-Use Entries Controlled by SMPTE.</caption>
-        <tr><th>Bytes 9..11</th> <th><a>Node</a> Name</th>                               <th>Notes</th></tr>
-        <tr><td>0D.01.01</td>    <td>Structural Metadata</td><td>                 </td></tr>
-        <tr><td>0D.01.02</td>    <td>Partition Packs | Operational Patterns</td>  <td> </td></tr>
-        <tr><td>0D.01.03</td>    <td>Essence Containers</td>                      <td rowspan="2">Delegated by AMWA Association.</td></tr>
-        <tr><td>0D.01.04</td>    <td>Descriptive Metadata Schemes</td></tr>
-        <tr><td>0D.01.05</td>    <td>Generic Stream Partition</td><td>            </td></tr>
-        <tr><td>0D.01.06</td>    <td>Application Metadata Plugin</td><td>         </td></tr>
+        <thead>
+          <tr>
+            <th>Bytes 9..11</th>
+            <th><a>Node</a> Name</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0D.01.01</td>
+            <td>Structural Metadata</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>0D.01.02</td>
+            <td>Partition Packs | Operational Patterns</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>0D.01.03</td>
+            <td>Essence Containers</td>
+            <td rowspan="2">Delegated by AMWA Association.</td>
+          </tr>
+          <tr>
+            <td>0D.01.04</td>
+            <td>Descriptive Metadata Schemes</td>
+          </tr>
+          <tr>
+            <td>0D.01.05</td>
+            <td>Generic Stream Partition</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>0D.01.06</td>
+            <td>Application Metadata Plugin</td>
+            <td> </td>
+          </tr>
+        </tbody>
       </table>
     </section>
 
