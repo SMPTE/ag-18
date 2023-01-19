@@ -1,15 +1,11 @@
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
 <html>
 
   <head itemscope="itemscope" itemtype="http://smpte.org/standards/documents">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="tooling/smpte.js"></script>
-    <link rel="stylesheet" href="tooling/smpte.css" />
-    <!-- Do not edit above this line -->
-    <!-- Start of editable section in header-->
-    <!-- Update only content attributes in each meta element below as needed -->
+    <script src="../tooling/smpte.js"></script>
     <meta itemprop="pubType" content="AG" />
     <meta itemprop="pubNumber" content="18" />
     <meta itemprop="pubState" content="draft" />
@@ -20,14 +16,6 @@
   </head>
 
   <body>
-
-    <!-- Start of TOC - Do not remove or add anything in this section, generation is automated -->
-    <section id="sec-toc"></section>
-    <!-- End of TOC -->
-
-    <!-- Start of Forward - Do not remove or add anything in this section, generation is automated -->
-    <section id="sec-foreword"></section>
-    <!-- End of Forward -->
 
     <section id="sec-introduction" class="unnumbered">
       <h2>Introduction</h2>
@@ -45,28 +33,21 @@
       </ul>
     </section>
 
-    <!-- Start of Scope - Do not remove this section -->
     <section id="sec-scope">
-      <!-- Add paragraphs in this section as needed for scope -->
       <p>This Administrative Guideline specifies maintenance and publication processes specific to the SMPTE <a>Metadata Register</a>s.</p>
-
     </section>
-    <!-- End of Scope -->
-
-    <!-- Start of Conformance - Do not remove or add anything in this section, generation is automated -->
-    <section id="sec-conformance"></section>
-    <!-- End of Conformance -->
-
-    <!-- Start of Normative references - Do not remove this section -->
+   
     <section id="sec-normative-references">
 
-      <!-- Add `li` sub elements as needed in this section as needed for references. If no Normative references, remove the entire `ul` element. Pre text for this section is auto generated based on `ul` present or not. -->
       <ul>
         <li><cite id="bib-smpte-st-2003">SMPTE ST 2003</cite>, Types Dictionary Structure
           <a>https://doi.org/10.5594/SMPTE.ST2003.2012</a>
         </li>
-        <li><cite id="bib-smpte-st-335">SMPTE ST 335</cite>, Metadata Element Dictionary Structure
-          <a>https://doi.org/10.5594/SMPTE.ST335.2012</a>, <a>https://doi.org/10.5594/SMPTE.ST335.2012Am1.2019</a>
+        <li><cite id="bib-smpte-st-335">SMPTE ST 335</cite>:2012, Metadata Element Dictionary Structure
+          <a>https://doi.org/10.5594/SMPTE.ST335.2012Am1.2019</a>
+        </li>
+        <li><cite id="bib-smpte-st-335-am1">SMPTE ST 335 Am1</cite>:2019, Metadata Element Dictionary Structure
+          <a>https://doi.org/10.5594/SMPTE.ST335.2012Am1.2019</a>
         </li>
         <li><cite id="bib-smpte-st-395">SMPTE ST 395</cite>, Metadata Groups Register
           <a>https://doi.org/10.5594/SMPTE.ST395.2012</a>
@@ -87,43 +68,36 @@
       </ul>
 
     </section>
-    <!-- End of Normative references -->
 
-    <!-- Start of Terms and definitions - Do not remove this section -->
     <section id="sec-terms-and-definitions">
 
-      <!-- Use the `ul` element to list external documents where Terms are defined (use same logic as referenced docs in the body of the document as example shows). Add `dt/dd` sub element pairs as needed for Terms to be defined internally in this document. Remove either the `ul` if no external Terms, or `dl` if no internally defined Terms. If no Terms needed to be defined at all, remove the both `ul` and `dl` elements. Pre text for this section is auto generated based on what elements are present. -->
-
-
+ 
       <dl id="terms-int-defs">
         <dt><dfn>Controlling Organization</dfn></dt>
-        <dd>Entity responsible for the creation, modification or deletion of an <a>Entry</a>.</dd>
+          <dd>Entity responsible for the creation, modification or deletion of an <a>Entry</a>.</dd>
         <dt><dfn>Node</dfn></dt>
-        <dd><a>Entry</a> that can contain other <a>Entry</a>(ies).
-          <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
-        </dd>
+          <dd><a>Entry</a> that can contain other <a>Entry</a>(ies).
+            <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
+          </dd>
         <dt><dfn>Entry</dfn></dt>
-        <dd>Combines one <a>UL</a> and multiple associated properties.</dd>
+          <dd>Combines one <a>UL</a> and multiple associated properties.</dd>
         <dt><dfn>Defining Document</dfn></dt>
-        <dd>Document referenced in the <code>Defining Document</code> property of an <a>Entry</a>.
-          <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
-        </dd>
+          <dd>Document referenced in the <code>Defining Document</code> property of an <a>Entry</a>.
+            <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
+          </dd>
         <dt><dfn>Metadata Register</dfn></dt>
-        <dd>Collection of <a>Entry</a>(ies) defined by a <a>Metadata Register Structure Document</a>.</dd>
+          <dd>Collection of <a>Entry</a>(ies) defined by a <a>Metadata Register Structure Document</a>.</dd>
         <dt><dfn>Metadata Register Structure Document</dfn></dt>
-        <dd>SMPTE Engineering Document that defines a <a>Metadata Register</a>.
-          <p class="note">The SMPTE Registration Authority website lists <a>Metadata Register Structure Document</a>s, as provided by <a href="#sec-structure-documents"></a>.
-        </p>
-        </dd>
+          <dd>SMPTE Engineering Document that defines a <a>Metadata Register</a>.
+            <p class="note">The SMPTE Registration Authority website lists <a>Metadata Register Structure Document</a>s, as provided by <a href="#sec-structure-documents"></a>.
+          </p>
+          </dd>
         <dt><dfn>Release</dfn></dt>
-        <dd>A SMPTE Standard, or a revision or amendment thereof, whose elements consists of one or more <a>Metadata Register</a>s to be published.</dd>
+          <dd>A SMPTE Standard, or a revision or amendment thereof, whose elements consists of one or more <a>Metadata Register</a>s to be published.</dd>
         <dt><dfn>UL</dfn></dt>
-        <dd>SMPTE-administered Universal Label as specified in <a href="#bib-smpte-st-298"></a> and constrained by <a href="#bib-smpte-st-336"></a>.</dd>
+          <dd>SMPTE-administered Universal Label as specified in <a href="#bib-smpte-st-298"></a> and constrained by <a href="#bib-smpte-st-336"></a>.</dd>
       </dl>
-    </section>
-    <!-- End of Terms and definitions -->
-
-    <!-- Start of editable area. Add sections as needed, following the examples below. `id` attribue is required for each section (and subsection) for linking into TOC. Headers are required for labeling each section. Use `h2` element for top level, and `h3`, `h4`, etc. for nested sub sections as needed. For Annexes, add `class="annex"` to the top level section element, as example shows. Numbering is auto generated, including nesting. --> 
+    </section> 
 
     <section id="sec-general">
       <h2>General</h2>
@@ -144,7 +118,7 @@
         <table id="table-superseded">
           <caption>Superseded Procedures and Criteria.</caption>
           <tr>
-            <td><a href="#bib-smpte-st-335"></a></td>
+            <td><a href="#bib-smpte-st-335"></a> and <a href="#bib-smpte-st-335-am1"></a></td>
             <td>Section 5 and Annex B</td>
           </tr>
           <tr>
@@ -332,14 +306,14 @@
           A <dfn>Submission</dfn> is a request to alter a <a>Metadata Register</a>. It follows the <a>Submission</a> process, which is specified in the following Sections and illustrated in <a href="#figure-submission-process"></a>, and is intended to prepare stable <a>Entry</a>(ies) for inclusion in a <a>Release</a>.
         </p>
         <p>
-          <a href="#sec-allocation-transfer"></a> provides selected examples of the <a>Submission</a> process.
+          <a href="#sec-allocation-transfer"></a> provides selected examples of the <a>Submission</a> process.</p>
 
           <figure id="figure-submission-process">
-            <img class="figure" src="submission-process.png">
+            <img class="figure" src="media/submission-process.png">
             <figcaption><a>Submission</a> Process (informative).</figcaption>
           </figure>
 
-        </p>
+        
         <p>
           The Metadata Register Sub Group shall make available to its parent Technology Committee all <a>Submission</a>s not incorporated in a <a>Release</a>. The Standards Vice President may, at his or her discretion, make the latter available publicly.
         </p>
@@ -649,12 +623,13 @@ DD := 2DIGIT
           <p>
             The <code>DATE</code> field shall be the date when the <a>Submission</a> was initially submitted.
           </p>
-          <p>
-            EXAMPLE: 30MR-REG-DD-ST2067-01-2017-12-10.zip
+          <p class="example">
+            30MR-REG-DD-ST2067-01-2017-12-10.zip
           </p>
-          <p>
-            EXAMPLE: 30MR-REG-CLASS13-LOC-new-entries-2017-10-10.zip
+          <p class="example">
+            30MR-REG-CLASS13-LOC-new-entries-2017-10-10.zip
           </p>
+
         </section>
 
         <section id="sec-contents">
@@ -677,8 +652,8 @@ REGISTER := "groups" / "elements" / "labels" / "types"
           <p>
             where the <code>TC</code>, <code>TYPE</code> and <code>DESCRIPTION</code> fields shall match that of the <a>Submission</a> file name (<a href="#sec-filename"></a>).
           </p>
-          <p>
-            EXAMPLE: 30MR-REG-DD-ST2067-01-groups.xml, 30MR-REG-CLASS14-XYZCorp-labels.xml
+          <p class="example">
+            30MR-REG-DD-ST2067-01-groups.xml, 30MR-REG-CLASS14-XYZCorp-labels.xml
           </p>
           <p>
             The filename of each document shall remain constant throughout the <a>Submission</a> process.
@@ -819,15 +794,15 @@ REGISTER := "groups" / "elements" / "labels" / "types"
     <section class="annex" id="sec-examples">
       <h2>Examples (informative)</h2>
 
-      <section id="sec-example-st">
+      <section id="sec-example-eng-doc-defining">
         <h3>SMPTE Engineering Document as <a>Defining Document</a></h3>
         <p>
           <a href="#sec-figure-st-timeline"></a> illustrates the <a>Release</a> process for an <a>Entry</a> whose <a>Defining Document</a> is a SMPTE Engineering Document.
         </p>
 
         <figure id="sec-figure-st-timeline">
+          <img class="figure" src="media/st-timeline.png">
           <figcaption>Sample Timeline: <a>Entry</a> whose <a>Defining Document</a> is a SMPTE Engineering Document.</figcaption>
-          <img class="figure" src="st-timeline.png">
         </figure>
 
       </section>
@@ -839,9 +814,8 @@ REGISTER := "groups" / "elements" / "labels" / "types"
         </p>
 
         <figure id="sec-figure-rdd-timeline">
+          <img class="figure" src="media/rdd-timeline.png">
           <figcaption>Sample Timeline: <a>Entry</a> whose <a>Defining Document</a> is a SMPTE RDD.</figcaption>
-          <img class="figure" src="rdd-timeline.png">
-          
         </figure>
       </section>
       
@@ -854,8 +828,8 @@ REGISTER := "groups" / "elements" / "labels" / "types"
         </p>
 
         <figure id="sec-figure-top-level-timeline">
+          <img class="figure" src="media/top-level-timeline.png">
           <figcaption>Sample Timeline: <a>Entry</a> whose <a>Defining Document</a> is a <a href="#bib-smpte-ag-03"></a> or is a Class 13/14 Top-Level <a>Node</a>.</figcaption>
-          <img class="figure" src="top-level-timeline.png">
         </figure>
 
       </section>
@@ -973,20 +947,12 @@ REGISTER := "groups" / "elements" / "labels" / "types"
       </table>
     </section>
 
-
-<!-- End of editable sections -->
-
-<!-- Start of Bibliography - ONLY use if infomative references are present - If no Bibliographic references, remove the entire section. -->
   <section id="sec-bibliography">
     <ul>
       <li><cite id="bib-smpte-ag-02">SMPTE AG-02</cite>, Document Naming and Packaging
         <a>https://smpte.github.io/ag-02/</a></li>
     </ul>
   </section>
-<!-- End of Bibliography -->
-
-<!-- Do not edit below this line -->
 
   </body>
-
 </html>
