@@ -1,7 +1,8 @@
-# Administrative Guideline 18 - Metadata Registers Procedures (AG 18)
+# SMPTE _AG 18_ - _Metadata Registers Procedures_
 
-Please see CONTRIBUTING.md, PATENT.md and LICENSE.md for important intellectual property information.
+_This repository is *public*._
 
+Rendered at [https://smpte.github.io/ag-18/](https://smpte.github.io/ag-18/).
 
-
-
+Please consult [CONTRIBUTING.md](./CONTRIBUTING.md), [CONFIDENTIALITY.md](./CONFIDENTIALITY.md), [LICENSE.md](./LICENSE.md) and
+[PATENTS.md](./PATENTS.md) for important notices.
