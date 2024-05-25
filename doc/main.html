@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="../tooling/smpte.js"></script>
+    <script type="module" src="../tooling/smpte.js"></script>
     <meta itemprop="pubType" content="AG" />
     <meta itemprop="pubNumber" content="18" />
     <meta itemprop="pubState" content="draft" />
@@ -76,21 +76,18 @@
         <dt><dfn>Controlling Organization</dfn></dt>
           <dd>Entity responsible for the creation, modification or deletion of an <a>Entry</a>.</dd>
         <dt><dfn>Node</dfn></dt>
-          <dd><a>Entry</a> that can contain other <a>Entry</a>(ies).
-            <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
-          </dd>
+          <dd><a>Entry</a> that can contain other <a>Entry</a>(ies).</dd>
+          <dd class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</dd>
         <dt><dfn>Entry</dfn></dt>
           <dd>Combines one <a>UL</a> and multiple associated properties.</dd>
         <dt><dfn>Defining Document</dfn></dt>
-          <dd>Document referenced in the <code>Defining Document</code> property of an <a>Entry</a>.
-            <p class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</p>
-          </dd>
+          <dd>Document referenced in the <code>Defining Document</code> property of an <a>Entry</a>.</dd>
+          <dd class="note">A more detailed definition is provided in each <a>Metadata Register Structure Document</a>.</dd>
         <dt><dfn>Metadata Register</dfn></dt>
           <dd>Collection of <a>Entry</a>(ies) defined by a <a>Metadata Register Structure Document</a>.</dd>
         <dt><dfn>Metadata Register Structure Document</dfn></dt>
-          <dd>SMPTE Engineering Document that defines a <a>Metadata Register</a>.
-            <p class="note">The SMPTE Registration Authority website lists <a>Metadata Register Structure Document</a>s, as provided by <a href="#sec-structure-documents"></a>.
-          </p>
+          <dd>SMPTE Engineering Document that defines a <a>Metadata Register</a>.</dd>
+          <dd class="note">The SMPTE Registration Authority website lists <a>Metadata Register Structure Document</a>s, as provided by <a href="#sec-structure-documents"></a>.
           </dd>
         <dt><dfn>Release</dfn></dt>
           <dd>A SMPTE Standard, or a revision or amendment thereof, whose elements consists of one or more <a>Metadata Register</a>s to be published.</dd>
@@ -454,7 +451,7 @@
           </p>
         </section>
 
-        <section>
+        <section id="sec-mature-to-withdrawn">
           <h4>Transition to Withdrawn State</h4>
           <p>
             The <a>Submission</a> shall transition to "withdrawn" if:
